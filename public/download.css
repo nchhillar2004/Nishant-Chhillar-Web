@@ -1,0 +1,66 @@
+.button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    margin-left: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--secondary-dark-color);
+    background-color: var(--primary-dark-color);
+    overflow: hidden;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--secondary-dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: #fff;
+  }
+  
+  .button:hover {
+    background: var(--primary-dark-color);
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: var(--primary-dark-color);
+  }
+  
+  .button:active {
+    border: 1px solid var(--primary-dark-color);
+  }
+
+:root {
+    --primary-dark-color: #282936;
+    --secondary-dark-color: #0066FE;
+    --lightgray: #e8e8e8;
+    --offwhite: #f2f2f2;
+}
